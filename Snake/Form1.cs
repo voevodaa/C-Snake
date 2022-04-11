@@ -9,7 +9,7 @@ namespace Snake
         private int SnakeX, SnakeY;
         private int SnakeDirectionX = 1, SnakeDirectionY = 1;
         private Point FoodPosition = new Point(5,5);
-        private const int CellSize = 20; // размер змейки
+        private const int CellSize = 20; 
         private Point[] Tail = new Point[3];
         private bool IsStepLocked;
         private Random random = new Random();
@@ -20,7 +20,7 @@ namespace Snake
 
             SnakeX += SnakeDirectionX;
             SnakeY += SnakeDirectionY;
-            if(SnakeX > 15) // шаги змейки
+            if(SnakeX > 15) 
             {
                 SnakeX = 0;
             }
@@ -28,7 +28,7 @@ namespace Snake
             {
                 SnakeX = 15;
             }
-            if(SnakeY > 15) // шаги змейки
+            if(SnakeY > 15) 
             {
                 SnakeY = 0;
             }
